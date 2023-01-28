@@ -6,14 +6,20 @@
     --white-color: #FFFFFF;
     --green-color: #688800;
     --gray-color: #4A4A4A ;
+    --light-gray-color: #949494;
 }
-
+html {
+    margin: 0 2rem;
+}
 *, :before, :after {
     box-sizing: inherit;
 }
-
+.header{
+    margin-bottom: 5rem;
+}
 .menuflex {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -25,6 +31,7 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     text-decoration: none;
+    padding: 1rem 3rem;
 }
 
 .aheader:hover {
@@ -38,12 +45,16 @@ li {
 }
 
 nav {
-    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
-ul {
+
+.ulnav {
     display: flex;
+    justify-items: center;
     justify-content: space-between;
+    max-width: 75rem;
 }
 
 h2 {
@@ -53,8 +64,14 @@ h2 {
     font-weight: 400;
     font-size: 3.6rem;
     line-height: 4rem;
+    text-align: center;
+    margin: 1rem;
 }
-
+.oil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .mainbutton {
     font-weight: 500;
     display: block;
@@ -73,10 +90,49 @@ h2 {
     color: var(--green-color);
     top: 7rem;
 }
+ .buttonhidden {
+    border: 0ex;
+    background: var(--white-color);
+ }
 
+.description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 .count {
-    display: inline-block;
+    display:flex;
+    max-width: 13rem;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.countbutton {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    color: var(--green-color);
+    background: var(--white-color);
+    border-radius: 0.5rem;
+    border-color: var(--light-gray-color);
+    color: var(--gray-color);
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 0%;
+}
+.countp {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0 2rem;
+    color: var(--green-color);
 }
 
 .buttonform {
@@ -96,4 +152,22 @@ h2 {
     text-decoration: none;
     color: var(--green-color);
     top: 7rem;
+}
+@media all and (max-width: 768px) {
+    nav {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    #menuicon {
+
+    }
 }
