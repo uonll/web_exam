@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=El+Messiri&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Смирнова Софья Викторовна 211-325 28.01.2023</title>
+  </head>
+  <body>
+    <header>
+      <div class="menuflex">
+        <a class="aheader" href="/"
+          ><img src="/pics/svg/logo.svg" alt="лого" width="37" height="80"
+        /></a>
+        <nav>
+          <ul class="ulnav">
+            <li>
+              <a class="aheader" class="aheader:hover" href="/">Масло</a>
+            </li>
+            <li><a class="aheader" class="aheader:hover" href="/">О нас</a></li>
+            <li>
+              <a class="aheader" class="aheader:hover" href="/">Отзывы</a>
+            </li>
+            <li>
+              <a class="aheader" class="aheader:hover" href="/">Оплата и доставка</a>
+            </li>
+            <li>
+              <a class="aheader" class="aheader:hover" href="/">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="buttonhidden">
+          <img src="/pics/svg/menu.svg" alt="меню" width="32" height="32" />
+        </button>
+        <button class="buttonhidden">
+            <img src="/pics/svg/korzina.svg" alt="корзина" width="32" height="32" />
+          </button>
+      </div>
+    </header>
+    <main>
+        <section>
+            <img src="/pics/png/oil.png" alt="меню" width="280" height="314" />
+            <h2> Масло "Для салата"</h2>
+            <p>
+                Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат. 
+            </p>
+            <div class="count">
+                <button> - </button>
+                <p> 2 </p>
+                <button> + </button>
+            </div>
+            <button class="mainbutton"> ПОДРОБНЕЕ </button>
+            <button class="mainbutton"> В КОРЗИНУ </button>    
+        </section>
+        <section>
+            <h2>Задание 2</h2>
+            <form class="form" action="https://httpbin.org/post" name="contact" method="POST">
+                <fieldset>
+                    <legend>Заказать</legend>
+                    <div class="formgrid">
+                        <label>
+                            <span class="input-label">E-mail</span>
+                            <input type="text" name="Name" placeholder="name@gmail.com" required>
+                        </label>
+                        <label>
+                            <span class="input-label">Пароль</span>
+                            <input type="email" name="email" placeholder="Введите пароль">
+                        </label>
+                    </div>
+                    <div class="formgrid">
+                        <label><input class="none" type="checkbox" name="gender" value="1">Согласен(-на) с договором</label>
+                        <label><input class="none" type="checkbox" name="gender" value="2">Согласен(-на) с обработкой данных</label>
+                    </div>
+                    <div class="formflex">
+                        <button class="buttonForm" class="buttonForm:hover" type="submit"><img src="/pics/svg/send.svg" alt="" width="20" height="20">Отправить</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
